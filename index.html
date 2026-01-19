@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vehix - A simple, privacy-focused iOS app for tracking your car maintenance. All data stays on your device.">
+    <meta name="theme-color" content="#0D1B2A">
+    <title>Vehix - Track Service. Know Your Car.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23E07A5F' rx='20' width='100' height='100'/><text y='.9em' x='50%' text-anchor='middle' font-size='70'>🚗</text></svg>">
+</head>
+<body>
+    <!-- Floating gradient orbs -->
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="gradient-orb orb-4"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4c-.4-.5-.9-.8-1.5-.8H10.2c-.6 0-1.1.3-1.5.8L6 10l-2.5 1.1C2.7 11.5 2 12.2 2 13.1v2.8c0 .6.4 1 1 1h2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="7" cy="17" r="2" stroke="white" stroke-width="2"/>
+                            <circle cx="17" cy="17" r="2" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <span>Vehix</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#download">Download</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Available on App Store</div>
+                <h1 class="hero-title">
+                    Track service.<br>
+                    <span class="gradient-text">Know your car.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A beautifully simple iOS app for tracking vehicle maintenance.<br>
+                    All your data stays on your device—always.
+                </p>
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download Free
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        See Features
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="mockup-content">
+                            <div class="mockup-header">
+                                <div class="time">9:41</div>
+                            </div>
+                            <div class="mockup-app-title">Vehix</div>
+                            <div class="mockup-subtitle">Tap to log service</div>
+
+                            <div class="vehicle-selector">
+                                <span class="car-icon">🚗</span>
+                                <div class="vehicle-info">
+                                    <div class="vehicle-name">2020 Honda Accord</div>
+                                    <div class="vehicle-mileage">45,230 mi</div>
+                                </div>
+                                <span class="chevron">▼</span>
+                            </div>
+
+                            <div class="maintenance-grid">
+                                <div class="maint-tile">
+                                    <span class="tile-icon">🛢️</span>
+                                    <div>
+                                        <div class="tile-name">Oil Change</div>
+                                        <div class="tile-miles">2,340 mi</div>
+                                    </div>
+                                    <span class="due-badge">Due Soon</span>
+                                </div>
+                                <div class="maint-tile">
+                                    <span class="tile-icon">🔧</span>
+                                    <div>
+                                        <div class="tile-name">Tires</div>
+                                        <div class="tile-miles">4,100 mi</div>
+                                    </div>
+                                </div>
+                                <div class="maint-tile">
+                                    <span class="tile-icon">💨</span>
+                                    <div>
+                                        <div class="tile-name">Air Filter</div>
+                                        <div class="tile-miles">12,400 mi</div>
+                                    </div>
+                                </div>
+                                <div class="maint-tile">
+                                    <span class="tile-icon">🔋</span>
+                                    <div>
+                                        <div class="tile-name">Battery</div>
+                                        <div class="tile-miles">New</div>
+                                    </div>
+                                </div>
+                                <div class="maint-tile">
+                                    <span class="tile-icon">🚿</span>
+                                    <div>
+                                        <div class="tile-name">Wipers</div>
+                                        <div class="tile-miles">8,200 mi</div>
+                                    </div>
+                                </div>
+                                <div class="maint-tile">
+                                    <span class="tile-icon">⚡</span>
+                                    <div>
+                                        <div class="tile-name">Brakes</div>
+                                        <div class="tile-miles">18,500 mi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Banner -->
+    <section class="privacy-banner">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-icon">🔒</div>
+                <div>
+                    <h3>Zero Data Collection</h3>
+                    <p>All your vehicle data stays on your iPhone. No cloud sync. No tracking. No accounts required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything you need,<br>nothing you don't</h2>
+                <p>Start free with powerful features. Upgrade once for lifetime premium access.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Free Features -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Free Forever</h3>
+                        <div class="price">$0</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Unlimited vehicles
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Unlimited maintenance types
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            One-tap service logging
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Complete service history
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Export data as CSV
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Full dark mode support
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            100% private - local storage only
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Premium Features -->
+                <div class="feature-card premium-card">
+                    <div class="premium-badge">Best Value</div>
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            $3.99
+                            <span class="price-note">one-time</span>
+                        </div>
+                    </div>
+                    <p class="premium-subtitle">Everything in Free, plus:</p>
+                    <ul class="feature-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Visual analytics & spending charts
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Smart service reminders
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Cost tracking per service
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            All future premium updates
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            No subscriptions - pay once, own forever
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy-section">
+        <div class="container">
+            <div class="privacy-grid">
+                <div class="privacy-text">
+                    <h2>Your vehicle data<br>belongs to you</h2>
+                    <p class="lead">Unlike other apps, Vehix stores everything locally on your iPhone using Apple's SwiftData framework.</p>
+
+                    <div class="privacy-lists">
+                        <div class="privacy-list-section">
+                            <h4>We do NOT:</h4>
+                            <ul class="privacy-list deny-list">
+                                <li>Collect any personal information</li>
+                                <li>Require user accounts</li>
+                                <li>Track your usage</li>
+                                <li>Send data to servers</li>
+                                <li>Use analytics tools</li>
+                            </ul>
+                        </div>
+
+                        <div class="privacy-list-section">
+                            <h4>We DO:</h4>
+                            <ul class="privacy-list allow-list">
+                                <li>Store all data locally on your device</li>
+                                <li>Allow you to export your data anytime</li>
+                                <li>Use Apple StoreKit for secure purchases</li>
+                                <li>Respect your privacy completely</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="privacy.html" class="text-link">Read our Privacy Policy →</a>
+                </div>
+
+                <div class="privacy-visual">
+                    <div class="privacy-graphic">
+                        <div class="shield-icon">
+                            <svg viewBox="0 0 200 200" fill="none">
+                                <path d="M100 20L160 50V90C160 130 140 160 100 180C60 160 40 130 40 90V50L100 20Z"
+                                      fill="url(#shieldGradient)"
+                                      stroke="#3D5A80"
+                                      stroke-width="3"/>
+                                <path d="M75 95L90 110L125 75"
+                                      stroke="#0D1B2A"
+                                      stroke-width="6"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="shieldGradient" x1="40" y1="20" x2="160" y2="180">
+                                        <stop offset="0%" stop-color="#98C1D9"/>
+                                        <stop offset="100%" stop-color="#3D5A80"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="privacy-labels">
+                            <div class="privacy-label" style="animation-delay: 0.2s">Local Storage</div>
+                            <div class="privacy-label" style="animation-delay: 0.4s">No Cloud</div>
+                            <div class="privacy-label" style="animation-delay: 0.6s">No Tracking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="tech-content">
+                <h3>Built with modern iOS technology</h3>
+                <div class="tech-badges">
+                    <div class="tech-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        iOS 17.0+
+                    </div>
+                    <div class="tech-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.03 2.6a5.35 5.35 0 015.35-5.35h5.35V2.6h-5.35a5.35 5.35 0 01-5.35 5.35H2.6V2.6h4.43zm0 10.7a5.35 5.35 0 015.35 5.35v5.35H7.03v-5.35a5.35 5.35 0 01-5.35-5.35V7.95h5.35v5.35zm10.7 0a5.35 5.35 0 01-5.35 5.35v5.35h5.35a5.35 5.35 0 005.35-5.35v-5.35h-5.35v5.35z"/>
+                        </svg>
+                        SwiftUI
+                    </div>
+                    <div class="tech-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                        SwiftData
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-content">
+                <h2>Download Vehix</h2>
+                <p>Start tracking your vehicle maintenance today.<br>Free forever, with optional premium features.</p>
+
+                <a href="https://apps.apple.com" class="app-store-badge" target="_blank" rel="noopener">
+                    <svg width="180" height="54" viewBox="0 0 180 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="180" height="54" rx="8" fill="#0D1B2A" stroke="#3D5A80"/>
+                        <text x="68" y="22" fill="#98C1D9" font-size="10" font-family="system-ui">Download on the</text>
+                        <text x="68" y="40" fill="white" font-size="18" font-weight="600" font-family="system-ui">App Store</text>
+                        <path d="M38 14c-1.1 0-2 .9-2 2v22c0 1.1.9 2 2 2h0c1.1 0 2-.9 2-2V16c0-1.1-.9-2-2-2h0z" fill="white"/>
+                        <path d="M32 20c-.8-.6-1.9-.4-2.5.4l-6.4 8.7c-.6.8-.4 1.9.4 2.5.8.6 1.9.4 2.5-.4l6.4-8.7c.6-.8.4-1.9-.4-2.5z" fill="white"/>
+                        <path d="M44 20c.8-.6 1.9-.4 2.5.4l6.4 8.7c.6.8.4 1.9-.4 2.5-.8.6-1.9.4-2.5-.4l-6.4-8.7c-.6-.8-.4-1.9.4-2.5z" fill="white"/>
+                    </svg>
+                </a>
+
+                <div class="download-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Requirements</div>
+                        <div class="meta-value">iPhone with iOS 17.0+</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Price</div>
+                        <div class="meta-value">Free (Premium: $3.99)</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Size</div>
+                        <div class="meta-value">~5 MB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4c-.4-.5-.9-.8-1.5-.8H10.2c-.6 0-1.1.3-1.5.8L6 10l-2.5 1.1C2.7 11.5 2 12.2 2 13.1v2.8c0 .6.4 1 1 1h2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="7" cy="17" r="2" stroke="white" stroke-width="2"/>
+                                <circle cx="17" cy="17" r="2" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span>Vehix</span>
+                    </a>
+                    <p>Privacy-first car maintenance tracking for iOS</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#privacy">Privacy</a>
+                        <a href="#download">Download</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/matt-april/vehix" target="_blank" rel="noopener">GitHub</a>
+                        <a href="mailto:vehix.support@pm.me">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Matthew April. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
