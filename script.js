@@ -57,39 +57,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Apply to feature cards and sections
-    document.querySelectorAll('.feature-card, .section-header, .privacy-grid > div').forEach(el => {
+    // Apply to feature cards, step cards, use cases, and sections
+    document.querySelectorAll('.feature-card, .section-header, .step-card, .use-case').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
         fadeInObserver.observe(el);
     });
 
-    // Privacy labels staggered animation on scroll
-    const privacyLabels = document.querySelectorAll('.privacy-label');
-    const labelsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                privacyLabels.forEach((label, index) => {
-                    setTimeout(() => {
-                        label.style.opacity = '1';
-                        label.style.transform = 'translateX(0)';
-                    }, index * 150);
-                });
-                labelsObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.3 });
+    // Staggered animation for step cards
+    const stepCards = document.querySelectorAll('.step-card');
+    stepCards.forEach((card, index) => {
+        card.style.transitionDelay = `${index * 0.15}s`;
+    });
 
-    const privacyVisual = document.querySelector('.privacy-visual');
-    if (privacyVisual) {
-        privacyLabels.forEach(label => {
-            label.style.opacity = '0';
-            label.style.transform = 'translateX(-30px)';
-            label.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
-        });
-        labelsObserver.observe(privacyVisual);
-    }
+    // Staggered animation for use cases
+    const useCases = document.querySelectorAll('.use-case');
+    useCases.forEach((useCase, index) => {
+        useCase.style.transitionDelay = `${index * 0.1}s`;
+    });
 
     // Add subtle parallax to gradient orbs
     let ticking = false;
@@ -127,4 +113,4 @@ document.addEventListener('DOMContentLoaded', () => {
 // Console easter egg
 console.log('%c🚗 Vehix', 'font-size: 24px; font-weight: bold; color: #E07A5F;');
 console.log('%cTrack Service. Know Your Car.', 'font-size: 14px; color: #98C1D9;');
-console.log('%cBuilt with privacy in mind.', 'font-size: 12px; color: #5A7A9A;');
+console.log('%cStop guessing when your car needs maintenance.', 'font-size: 12px; color: #5A7A9A;');
