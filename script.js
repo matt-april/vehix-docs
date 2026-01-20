@@ -111,6 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Console easter egg
-console.log('%c🚗 Vehix', 'font-size: 24px; font-weight: bold; color: #E07A5F;');
+console.log('%cVehix', 'font-size: 24px; font-weight: bold; color: #E07A5F;');
 console.log('%cTrack Service. Know Your Car.', 'font-size: 14px; color: #98C1D9;');
 console.log('%cStop guessing when your car needs maintenance.', 'font-size: 12px; color: #5A7A9A;');
